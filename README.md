@@ -110,3 +110,12 @@
   - Insertion: O(log n)
   - Deletion: O(log n)
   
+
+
+To do, hash tables
+
+Searching: breadth first vs depth first 
+Sorting algorithms: Bubble sort, selection sort, insertion sort, merge sort, heap sort
+bit manipulation
+file i/o
+classes/OOP
