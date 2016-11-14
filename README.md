@@ -110,6 +110,20 @@
   - Insertion: O(log n)
   - Deletion: O(log n)
   
+## Heap
+#### To know:
+  - Composed of three elements:
+    - Key - used to get element data
+    - Hashing function - used to determine where the data element should go and where to find it
+    - Buckets - contains the data
+  - Keys are associated with a value for example, the key `344`, once inserted into the hashing function, will always return `"hello world"`
+  - Collisions occur when multiple keys try to use the same bucket
+
+#### Big O:
+  - Access: O(1)
+  - Search: O(1)
+  - Insertion: O(1)
+  - Deletion: O(1)
 
 
 To do, hash tables
