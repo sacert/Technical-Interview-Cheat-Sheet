@@ -1,6 +1,33 @@
 # Technical Interview Cheat Sheet
 
 
+WIP
+
+# Big O
+- Big O - describes the upper bound 
+- Big Omega - describes the lower bound
+- Big Theta - describes the tight bound
+
+<p align="center">
+  <img src="http://web.engr.oregonstate.edu/~huanlian/teaching/cs570/big_theta.jpg" alt="Big o theta omega" width="400"/>
+</p>
+
+Graphical representation showing how (a) has a tight bound between a function g(n) times a constant `c1` and another constant `c2`. Simplified example 3n<sup>2</sup> < 5n<sup>2</sup> < 8n<sup>2</sup>. (b) describes the upper bound. (c) describes lower bound.
+
+- Best case - Perfect world / Best situation (all elements in `insertion sort` are in order = O(n)
+- Worst case - Worst situation (no elements in `insertion sort` are in order = O(n<sup>2</sup>)
+- Average case - What will likely be the case. Usually is the same as the worst case (`insertion sort` more likely to be out of order so O(n<sup>2</sup>)
+
+*Note:* Determing best case and worst case isn't too hard but average case requires intuition.  
+
+Big O/Omega/Theta *DOES NOT* correspond to worst/best/average case. The worst/best/average case will *describe* Big O/Omega/Theta. An easy way to understand this is using `insertion sort`. If all elements are ordered, then applying `insertion sort` will have a best case scenario and an upper bound of O(n) while if all elements are not in order, this would be the worst possible case and cause the upper bound to be O(n<sup>2</sup>). Still dealing with Big O but depending on the situation, the best, worst, and average case varies.
+
+
+
+------------
+
+Old Stuff: May or may not use
+
 # Data Structures
 
 ## Arrays
