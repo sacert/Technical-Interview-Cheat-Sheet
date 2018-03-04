@@ -88,9 +88,58 @@ But there are many more. For interviews, it is best to widen view to any possibi
 
 ------------
 
-Old Stuff: May or may not use
-
 # Data Structures
+
+## Linked Lists
+#### To know:
+  - Collection of data elements known as *nodes* that point to each other using pointers.
+  - Nodes are generally comprised of a `head` and `next` element
+  - May be a singly linked list (each node points to the next node) or doubly linked list (each nodes points to the next node and the previous node)
+  - Linked lists questions are likely to use **recursion** and **runner technique** - must be able to implement either 
+  - Understand and be able to implement the following (best to implement using using `head` (forces better understanding of linked lists):
+  - `push_front(value)`
+  - `pop_front()`
+  - `push_back(value)`
+  - `pop_back()`
+  - `value_at(index)`
+  - `print_nodes()`
+  - `reverse_nodes()` - use recursion for O(n) time complexity
+  
+  - Recursive call psuedo code - *must* know this:
+  `recursive_call(i, node)
+  if (i == n)
+    return node
+    
+  curr_node = recursive_call(i++, n->next);
+  return curr_node
+  `
+  - Runner technique psuedo code:
+  `
+  hare, rabbit = curr_node
+  while (curr_node != NULL)
+    hare += 2 nodes
+    rabbit += 1 node
+  `
+  
+  C++ need to knows:
+  - built in function:
+  - `list<type> linked_list`
+  - `list<type>::iterator it`
+  - `next(it)`
+  - `prev(it)`
+  - `*it` - get element
+  - `linked_list.sort()`
+  - `for (list<type>::iterator it = linked_list.begin(); it != linked_list.end(); ++it) {}
+  
+
+#### Big O:
+  - Access: O(n)
+  - Search: O(n)
+  - Insertion: O(1)
+  - Deletion: O(1)
+  
+  
+------------
 
 ## Arrays
 #### To know:
@@ -107,18 +156,6 @@ Old Stuff: May or may not use
 #### Examples: 
   - `int foo[] = {3,5,6};`
   - `foo[2] = 24;`
-  
-## Linked Lists
-#### To know:
-  - Collection of data elements known as *nodes* that point to each other using pointers.
-  - Nodes are generally comprised of a `head` and `next` element
-  - May be a singly linked list (each node points to the next node) or doubly linked list (each nodes points to the next node and the previous node)
-
-#### Big O:
-  - Access: O(n)
-  - Search: O(n)
-  - Insertion: O(1)
-  - Deletion: O(1)
 
 ## Stacks
 #### To know:
