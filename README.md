@@ -106,7 +106,7 @@ Understand and be able to implement the following (best to implement using using
   * `print_nodes()`
   * `reverse_nodes()` - use recursion for O(n) time complexity
   
-  - Recursive call psuedo code - *must* know this:
+Recursive call psuedo code - *must* know this:
   ```recursive_call(i, node)
   if (i == n)
     return node
@@ -114,7 +114,7 @@ Understand and be able to implement the following (best to implement using using
   curr_node = recursive_call(i++, n->next);
   return curr_node
   ````
-  - Runner technique psuedo code:
+Runner technique psuedo code:
   ```
   hare, rabbit = curr_node
   while (curr_node != NULL)
@@ -122,18 +122,17 @@ Understand and be able to implement the following (best to implement using using
     rabbit += 1 node
   ```
   
-  C++ need to knows:
-  - built in function:
+C++ need to knows:
   - `list<type> linked_list`
   - `list<type>::iterator it`
   - `next(it)`
   - `prev(it)`
-  - `*it` - get element
+  - `*it - get element`
   - `linked_list.sort()`
-  - `for (list<type>::iterator it = linked_list.begin(); it != linked_list.end(); ++it) {}
+  - `for (list<type>::iterator it = linked_list.begin(); it != linked_list.end(); ++it) {}`
   
 
-#### Big O:
+#### Big O: 
   - Access: O(n)
   - Search: O(n)
   - Insertion: O(1)
@@ -141,6 +140,7 @@ Understand and be able to implement the following (best to implement using using
   
   
 ------------
+need to work on the below - currently what is there is old stuff I wrote
 
 ## Arrays
 #### To know:
